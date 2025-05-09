@@ -1,0 +1,169 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    background: #fdfdfd;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  header {
+    background: #f0f0f0;
+    padding: 1rem;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #a79c9c;
+  }
+  
+  .hero {
+    text-align: center;
+    padding: 2rem;
+    background: #eae7f2;
+    animation: fadeIn 1s ease;
+  }
+  
+  .hero button {
+    margin-top: 1rem;
+    padding: 0.7rem 1.5rem;
+    background: #a86ac3;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .hero button:hover {
+    background: #8a4faa;
+  }
+  
+  .planos, .em-andamento {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+  }
+  
+  .plano, .card {
+    background: #f5f5f5;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    animation: fadeUp 0.6s ease;
+  }
+  
+  .img-fake {
+    background: #ccc;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 1rem;
+  }
+  
+  .agenda {
+    background: #f7f3fb;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 400px;
+    margin: auto;
+    animation: fadeIn 1s ease;
+  }
+  
+  input, button {
+    padding: 0.8rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  button[type="submit"] {
+    background: #a86ac3;
+    color: white;
+    border: none;
+  }
+  
+  button[type="submit"]:hover {
+    background: #8a4faa;
+  }
+  
+  .sobre {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .foto-redonda {
+    margin: auto;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: #ccc;
+    margin-top: 1rem;
+  }
+  
+  footer {
+    background: #333;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .redes {
+    margin-top: 1rem;
+    height: 40px;
+    background: #555;
+    border-radius: 20px;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @media (max-width: 600px) {
+    nav ul {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    .plano, .card {
+      width: 100%;
+    }
+  
+    form {
+      width: 100%;
+      padding: 0 1rem;
+    }
+  }
+  
